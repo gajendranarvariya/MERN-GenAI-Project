@@ -117,8 +117,6 @@ backend/
 
 ---
 
-# Frontend README.md
-
 # 🚀 Frontend - MERN GenAI Career Assistant
 
 Frontend application built using React.js with Context API and Axios.
