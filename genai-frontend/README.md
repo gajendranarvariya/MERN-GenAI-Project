@@ -1,16 +1,121 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Frontend README.md
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```md
+# 🚀 Frontend - MERN GenAI Career Assistant
 
-## React Compiler
+Frontend application built using React.js with Context API and Axios.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This frontend integrates AI-powered APIs and provides users with a clean UI for:
 
-## Expanding the ESLint configuration
+- Authentication
+- Resume Analysis
+- AI Career Insights
+- ATS Resume Generation
+- PDF Download
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# 🧠 Tech Stack
+
+- React.js
+- Context API
+- Axios
+- React Router DOM
+- CSS / Tailwind CSS / Bootstrap
+
+---
+
+# ✨ Features
+
+- User Authentication
+- Protected Routes
+- AI Result Dashboard
+- Resume Upload UI
+- ATS Resume Generator
+- PDF Download
+- Context API State Management
+- Axios API Integration
+
+---
+
+# 🏗️ Frontend Architecture
+
+This project follows a **4-Layer Architecture**:
+
+## 1️⃣ UI Layer
+
+Contains:
+
+- Components
+- Pages
+- Layouts
+- Styling
+
+---
+
+## 2️⃣ State Layer
+
+Contains:
+
+- Context API
+- Global State
+- Authentication State
+
+---
+
+## 3️⃣ API Layer
+
+Contains:
+
+- Axios Instance
+- API Services
+- Request Handling
+
+---
+
+## 4️⃣ Hook Layer
+
+Contains:
+
+- Custom Hooks
+- Reusable Business Logic
+
+---
+
+# 📁 Folder Structure
+
+```bash
+frontend/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── api/
+│   │   ├── axios.js
+│   │   └── auth.api.js
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   └── useAI.js
+│   │
+│   ├── state/
+│   │   ├── AuthContext.jsx
+│   │   └── AIContext.jsx
+│   │
+│   ├── ui/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── layouts/
+│   │
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   │
+│   ├── App.js
+│   └── main.jsx
+│
+├── package.json
+└── .env
